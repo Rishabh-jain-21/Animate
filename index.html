@@ -1,0 +1,20 @@
+<html>
+  <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    This is how animate works
+    <br>
+    <button>Animate</button>
+    <br>
+    <div><p>Hello world</p></div>
+  </body>
+  <script>
+    $(document).ready(function(){
+      $('button').click(function(){
+        var p = $('p');
+        p.animate({left : '+=100px'}).animate({height : '200px'} , "slow").animate({width : '200px'} , "slow").animate({height : '100px'},"slow").animate({width : '100px'} , "slow").animate({fontSize : "20px"});
+      });
+    });
+  </script>
+</html>
